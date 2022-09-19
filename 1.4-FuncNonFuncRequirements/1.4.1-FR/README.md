@@ -1,8 +1,20 @@
 ## Опис функціональних вимог
 |FR|Опис функціональної вимоги|
 |:-----:|:-----:|
-|Продукт/пошукові фрази|2|
-|Bigoven https://www.bigoven.com|2|
-|Fitbit https://www.fitbit.com/|2|
-|Tinder https://tinder.com|2|
-|Soundtrap https://www.soundtrap.com|2|
+|FR1|2|
+|FR1.1|2|
+|FR1.2|2|
+|FR1.3|2|
+|FR1.4|2|
+|FR1.5|2|
+|FR1.6|2|
+|FR1.7|2|
+|FR2|2|
+|FR2.1|2|
+|FR2.2|2|
+|FR2.3|2|
+|FR2.4|2|
+|FR2.5|2|
+|FR2.6|2|
+|FR2.7|2|
+|FR2.8|2|
