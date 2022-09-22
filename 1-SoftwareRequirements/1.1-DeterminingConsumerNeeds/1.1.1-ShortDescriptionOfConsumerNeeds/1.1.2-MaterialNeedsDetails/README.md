@@ -1,0 +1,1 @@
+![mind-map](https://github.com/oleksandrblazhko/ai202-prokopenko/blob/ai-202-prokopenko-with_laboratory_work_1/1-SoftwareRequirements/1.1-DeterminingConsumerNeeds/1.1.1-ShortDescriptionOfConsumerNeeds/1.1.2-MaterialNeedsDetails/%D0%A2%D0%A1%D0%9F%D0%9F%20%D0%9B%D0%B0%D0%B11.jpg?raw=true)
