@@ -1,1 +1,21 @@
-
+{
+  "User": {
+    "id": "25748792",
+    "login": "Prokop",
+    "post": "Prokop@gmail.com",
+    "photo": {},
+    "age": "19",
+    "growth": "190",
+    "weight": "75",
+    "subscription": "1 year",
+     }
+  "Track": {
+    "id": "35748792",
+    "name": "Men in black",
+    "author": "Will Smith",
+    "album":"Big Willie Style",
+    "genre": "Hip-hop",
+    "popularity": "6/10",
+    "date": "1997",
+     }
+}
