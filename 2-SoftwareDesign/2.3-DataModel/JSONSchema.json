@@ -1,1 +1,76 @@
-
+{
+    "User": {
+      "description": "Користувач",
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Порядковий номер користувача",
+          "type": "int"
+        },
+        "login": {
+          "description": "Ім'я користувача",
+          "type": "string"
+        },
+        "e-mail": {
+          "description": "Ел. пошта користувача",
+          "type": "string"
+        },
+        "photo": {
+          "description": "Фото користувача",
+          "type": "string"
+        },
+        "age": {
+          "description": "Вік користувача",
+          "type": "int"
+        },
+        "growth": {
+          "description": "Зріст користувача",
+          "type": "int"
+        },
+        "weight": {
+          "description": "Вага користувача",
+          "type": "int"
+        },
+        "subscription": {
+          "description": "Підписка користувача",
+          "type": "string"
+        },
+        "required": [ "id", "login", "e-mail", "photo", "age", "growth", "weight", "subscription" ]
+      },
+    },
+  "Track": {
+      "description": "Муз. твір",
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Порядковий номер муз. твору",
+          "type": "int"
+        },
+        "name": {
+          "description": "Назва твору",
+          "type": "string"
+        },
+        "author": {
+          "description": "Ім'я виконавця твору",
+          "type": "string"
+        },
+        "album": {
+          "description": "Альбом твору",
+          "type": "string"
+        },
+        "genre": {
+          "description": "Жанр твору",
+          "type": "string"
+        },
+        "popalarity": {
+          "description": "Популярність твору",
+          "type": "int"
+        },
+        "date": {
+          "description": "Дата створення твору",
+          "type": "date"
+        },
+        "required": [ "id", "name", "author", "album", "genre", "popalarity", "date" ]
+      }
+    }
+}
