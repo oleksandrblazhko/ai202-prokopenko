@@ -1,1 +1,2 @@
-
+## UML-діаграма концептуальних класів
+![UMLConceptClass](https://github.com/oleksandrblazhko/ai202-prokopenko/blob/ai-202-prokopenko-with_laboratory_work_2/1.3-SoftwareUserRequirements/1.3.3-UseCaseDiagram/LB1.jpg?raw=true)
