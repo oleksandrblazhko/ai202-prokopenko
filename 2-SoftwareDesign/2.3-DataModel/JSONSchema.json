@@ -123,7 +123,7 @@
           "description": "Порядковий номер рецепту",
           "type": "int"
         },
-      "name": 
+      "name":{ 
           "description": "Назва рецепту",
           "type": "string"
         },
@@ -131,22 +131,22 @@
           "description": "Опис рекцепту",
           "type": "date"
         },
-     "photo":
+     "photo":{
           "description": "Фото рецепту",
           "type": "string"
         },
-        "ingredients":
+        "ingredients":{
           "description": "Перелік інгедієнтів",
           "type": "string"
         },
-    "instruction":
+    "instruction":{
           "description": "Інструкція приготування",
           "type": "string"
         },
         "required": [ "id", "name", "description", "photo", "ingredients", "instruction" ]
       },
     },
-"RecomendAction" {
+"RecomendAction": {
       "description": "Рекомендація з покращення фіз. стану",
       "type": "object",
       "properties": {
@@ -165,7 +165,7 @@
         "required": [ "id", "recomend", "date" ]
       },
     },
-    "Tracker" {
+    "Tracker": {
       "description": "Фітнес трекер",
       "type": "object",
       "properties": {
