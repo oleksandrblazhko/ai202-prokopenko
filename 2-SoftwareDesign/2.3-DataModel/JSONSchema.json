@@ -1,0 +1,183 @@
+{
+    "User": {
+      "description": "Користувач",
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Порядковий номер користувача",
+          "type": "int"
+        },
+        "login": {
+          "description": "Ім'я користувача",
+          "type": "string"
+        },
+        "e-mail": {
+          "description": "Ел. пошта користувача",
+          "type": "string"
+        },
+        "photo": {
+          "description": "Фото користувача",
+          "type": "string"
+        },
+        "age": {
+          "description": "Вік користувача",
+          "type": "int"
+        },
+        "growth": {
+          "description": "Зріст користувача",
+          "type": "int"
+        },
+        "weight": {
+          "description": "Вага користувача",
+          "type": "int"
+        },
+        "subscription": {
+          "description": "Підписка користувача",
+          "type": "string"
+        },
+        "required": [ "id", "login", "e-mail", "photo", "age", "growth", "weight", "subscription" ]
+      },
+    },
+  "Track": {
+      "description": "Муз. твір",
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Порядковий номер муз. твору",
+          "type": "int"
+        },
+        "name": {
+          "description": "Назва твору",
+          "type": "string"
+        },
+        "author": {
+          "description": "Ім'я виконавця твору",
+          "type": "string"
+        },
+        "album": {
+          "description": "Альбом твору",
+          "type": "string"
+        },
+        "genre": {
+          "description": "Жанр твору",
+          "type": "string"
+        },
+        "popalarity": {
+          "description": "Популярність твору",
+          "type": "int"
+        },
+        "date": {
+          "description": "Дата створення твору",
+          "type": "date"
+        },
+        "required": [ "id", "name", "author", "album", "genre", "date" ]
+      },
+    },
+    "RecomendTrack": {
+      "description": "Рекомендація з написання твору",
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Порядковий номер рекомендації з написання твору",
+          "type": "int"
+        },
+        "recomend": {
+          "description": "Рекомендація",
+          "type": "string"
+        },
+        "date": {
+          "description": "Дата створення рекомендації",
+          "type": "date"
+        },
+        "required": [ "id", "recomend", "date" ]
+      },
+    },
+    "Activity": {
+      "description": "Фіз. стан користувача",
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Порядковий номер фіз. стану",
+          "type": "int"
+        },
+        "goal": {
+          "description": "Ціль фіз. активності",
+          "type": "int"
+        },
+        "description": {
+          "description": "Опис фіз. активності",
+          "type": "string"
+        },
+        "date": {
+          "description": "Дата створення фіз. активності",
+          "type": "date"
+        },
+        "required": [ "id", "goal", "description", "date" ]
+      },
+    },
+    "Recipe": {
+      "description": "Рецепт приготування їжі",
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Порядковий номер рецепту",
+          "type": "int"
+        },
+      "name":{ 
+          "description": "Назва рецепту",
+          "type": "string"
+        },
+       "description": {
+          "description": "Опис рекцепту",
+          "type": "date"
+        },
+     "photo":{
+          "description": "Фото рецепту",
+          "type": "string"
+        },
+        "ingredients":{
+          "description": "Перелік інгедієнтів",
+          "type": "string"
+        },
+    "instruction":{
+          "description": "Інструкція приготування",
+          "type": "string"
+        },
+        "required": [ "id", "name", "description", "photo", "ingredients", "instruction" ]
+      },
+    },
+"RecomendAction": {
+      "description": "Рекомендація з покращення фіз. стану",
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Порядковий номер рекомендації покращення фіз. стану",
+          "type": "int"
+        },
+        "recomend": {
+          "description": "Рекомендація",
+          "type": "string"
+        },
+        "date": {
+          "description": "Дата створення рекомендації",
+          "type": "date"
+        },
+        "required": [ "id", "recomend", "date" ]
+      },
+    },
+    "Tracker": {
+      "description": "Фітнес трекер",
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Порядковий номер фітнес трекеру",
+          "type": "int"
+        },
+        "name": {
+          "description": "Назва трекеру",
+          "type": "string"
+        },
+        "required": [ "id", "name" ]
+      },
+    },
+}
