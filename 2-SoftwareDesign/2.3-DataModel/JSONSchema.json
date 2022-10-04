@@ -139,7 +139,7 @@
           "description": "Перелік інгедієнтів",
           "type": "string"
         },
-    "instruction"
+    "instruction":
           "description": "Інструкція приготування",
           "type": "string"
         },
