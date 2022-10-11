@@ -1,0 +1,211 @@
+{
+    "title": "User",
+      "description": "Користувач",
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Порядковий номер користувача",
+          "type": "integer",
+            "minimum": 0
+        },
+        "login": {
+          "description": "Ім'я користувача",
+          "type": "string",
+  	        "maxLength": 30
+        },
+        "e-mail": {
+          "description": "Ел. пошта користувача",
+          "type": "string",
+          "format" : "email"
+        },
+        "photo": {
+          "description": "Фото користувача",
+          "type": "string",
+            "maxLength": 15
+        },
+        "age": {
+          "description": "Вік користувача",
+          "type": "integer",
+            "minimum": 10
+        },
+        "growth": {
+          "description": "Зріст користувача",
+          "type": "integer",
+            "minimum": 1
+        },
+        "weight": {
+          "description": "Вага користувача",
+          "type": "integer",
+            "minimum": 1
+        },
+        "subscription": {
+          "description": "Підписка користувача",
+          "type": "string",
+          "pattern" : "(Немає підписки|Підписка на 1 міс|Підписка на 3 міс|Підписка на 1 рік)"
+        },
+        },
+        "required": [ "id", "login", "e-mail", "photo", "age", "growth", "weight", "subscription" ]
+      },
+  "title": "Track",
+      "description": "Муз. твір",
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Порядковий номер муз. твору",
+           "type": "integer",
+            "minimum": 0
+        },
+        "name": {
+          "description": "Назва твору",
+          "type": "string",
+  	        "maxLength": 30
+        },
+        "author": {
+          "description": "Ім'я виконавця твору",
+          "type": "string",
+  	        "maxLength": 30
+        },
+        "album": {
+          "description": "Альбом твору",
+          "type": "string",
+  	        "maxLength": 30
+        },
+        "genre": {
+          "description": "Жанр твору",
+          "type": "string",
+            "minLength": 1,
+  	        "maxLength": 30
+        },
+        "popalarity": {
+          "description": "Популярність твору",
+          "type": "integer",
+            "minimum": 0,
+            "maximum": 10
+        },
+        "date": {
+          "description": "Дата створення твору",
+          "type": "string",
+          "format": "data"
+        },
+        "required": [ "id", "name", "author", "album", "genre", "date" ] 
+      },
+    "title": "RecomendTrack",
+      "description": "Рекомендація з написання твору",
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Порядковий номер рекомендації з написання твору",
+          "type": "integer",
+            "minimum": 0
+        },
+        "recomend": {
+          "description": "Рекомендація",
+          "type": "string",
+  	        "maxLength": 2048
+        },
+        "date": {
+          "description": "Дата створення рекомендації",
+          "type": "string",
+          "format": "data"
+        },
+        "required": [ "id", "recomend", "date" ]
+    },
+    "title": "Activity",
+      "description": "Фіз. стан користувача",
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Порядковий номер фіз. стану",
+          "type": "integer",
+          "minimum": 0
+        },
+        "goal": {
+          "description": "Ціль фіз. активності",
+          "type": "integer",
+            "minLength": 1
+        },
+        "description": {
+          "description": "Опис фіз. активності",
+          "type": "string",
+  	        "maxLength": 2048
+        },
+        "date": {
+          "description": "Дата створення фіз. активності",
+          "type": "string",
+          "format": "data"
+        },
+        "required": [ "id", "goal", "description", "date" ]      
+    },
+    "title": "Recipe",
+      "description": "Рецепт приготування їжі",
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Порядковий номер рецепту",
+          "type": "integer",
+          "minimum": 0
+        },
+      "name":{ 
+          "description": "Назва рецепту",
+          "type": "string",
+            "maxLength": 64
+        },
+       "description": {
+          "description": "Опис рекцепту",
+          "type": "string"
+        },
+     "photo":{
+          "description": "Фото рецепту",
+          "type": "string",
+            "maxLegth": 15
+        },
+        "ingredients":{
+          "description": "Перелік інгедієнтів",
+          "type": "string",
+            "maxLength": 2048
+        },
+    "instruction":{
+          "description": "Інструкція приготування",
+          "type": "string",
+  	        "maxLength": 2048
+        },
+        "required": [ "id", "name", "description", "photo", "ingredients", "instruction" ]
+      },
+"title": "RecomendAction",
+      "description": "Рекомендація з покращення фіз. стану",
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Порядковий номер рекомендації покращення фіз. стану",
+          "type": "integer",
+          "minimum": 1
+        },
+        "recomend": {
+          "description": "Рекомендація",
+          "type": "string",
+  	        "maxLength": 2048
+        },
+        "date": {
+          "description": "Дата створення рекомендації",
+          "type": "string",
+          "format": "data"
+        },
+        "required": [ "id", "recomend", "date" ]
+    },
+    "title": "Tracker",
+      "description": "Фітнес трекер",
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Порядковий номер фітнес трекеру",
+          "type": "integer",
+          "minimum": 1
+        },
+        "name": {
+          "description": "Назва трекеру",
+          "type": "string",
+  	        "maxLength": 30
+        },
+        "required": [ "id", "name" ]
+    },
+
