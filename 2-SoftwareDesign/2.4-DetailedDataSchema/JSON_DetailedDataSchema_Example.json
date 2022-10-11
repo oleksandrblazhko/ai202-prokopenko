@@ -40,7 +40,9 @@
         },
         "subscription": {
           "description": "Підписка користувача",
-          "type": "string"
+          "type": "string",
+          "pattern" : "[Немає підписки, Підписка на 1 міс,Підписка на 3 міс, Підписка на 1 рік]"
+        },
         },
         "required": [ "id", "login", "e-mail", "photo", "age", "growth", "weight", "subscription" ]
       },
