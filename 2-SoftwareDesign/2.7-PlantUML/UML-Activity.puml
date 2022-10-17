@@ -1,1 +1,14 @@
+@startuml
+title Activity Diagram 
 
+start
+:The user enters the login and password data;
+:The program analyzes the user data;
+if (Is data correct?) then (Yes)
+  :Data is correct!;
+else (No)
+  :Incorrect data, check data!;
+endif
+stop
+
+@enduml
