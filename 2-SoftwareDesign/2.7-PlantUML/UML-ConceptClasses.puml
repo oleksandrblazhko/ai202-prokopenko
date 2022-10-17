@@ -1,1 +1,13 @@
+@startuml
+title Concept Classes Diagram
 
+Class User
+Class Music
+Class Music_Recomendation
+Class API_Music_Recomendation
+
+User"1" -up-> "+"Music : review
+Music_Recomendation"+" o-- "1"Music
+User"1" -up-> "+"Music_Recomendation: review
+API_Music_Recomendation"1" -up-> "+"Music_Recomendation: provide
+@enduml
