@@ -1,0 +1,30 @@
+@startjson
+
+title JSON Data
+{
+  "User": {
+    "id": "25748792",
+    "login": "Prokop",
+    "e-mail": "Prokop@gmail.com",
+    "photo": "images.net.jpg",
+    "age": "19",
+    "growth": "190",
+    "weight": "75",
+    "subscription": "1 year",
+  "Music_Recomendation": {
+    "id": "35748792",
+    "description": "Will Smith/Men in black",
+    "date": "10.10.2022"
+    },
+  "Fitness_Recomendation": {
+    "id": "46748792",
+    "description": "You need more steps",
+    "date": "10.10.2022"
+    },
+  "Tracker": {
+    "id": "78748792",
+    "name": "Google Pixel Watch"
+    }
+  }
+}
+@endjson
