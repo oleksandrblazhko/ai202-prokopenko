@@ -25,10 +25,6 @@ const userSchema = mongoose.Schema({
         type:int,
         require:true,
     },
-    age:{
-        type:int,
-        require:true,
-    },
     weight:{
         type:String,
         require:true,
