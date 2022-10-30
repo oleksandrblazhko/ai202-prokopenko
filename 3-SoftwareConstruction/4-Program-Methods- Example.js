@@ -20,6 +20,11 @@ import {
 	*/
 
 /* Авторизація користувача */
+//LOGIN
+userSchema.methods.matchPassword = async function (enterPassword){
+    return await bcrypt.compare(enterPassword,this.password);
+};
+const User = mongoose.model("User", userSchema)
 userRouter.post(
     "/login",
     asyncHandler(async (req, res) =>{
@@ -47,6 +52,15 @@ userRouter.post(
 );
 
 /* Реєстрація нового користувача */
+//REGISTER
+userSchema.pre("save", async function(next) {
+    if (!this.isModified("password")) {
+        next();
+    }
+    const salt = await bcrypt.genSalt(10);
+    this.password = await bcrypt.hash(this.password, salt);
+});
+
 userRouter.post(
     "/",
     asyncHandler(async (req, res) =>{
