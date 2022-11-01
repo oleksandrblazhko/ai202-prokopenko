@@ -1,0 +1,171 @@
+const userSchema = mongoose.Schema({
+    id:{
+        type:int,
+        require:true,
+        unique:true,
+    },
+    login:{
+        type:String,
+        require:true,
+        },
+    email:{
+        type:String,
+        require:true,
+        unique:true,
+    },
+    photo:{
+        type:String,
+        require:true,
+    },
+    age:{
+        type:int,
+        require:true,
+    },
+    growth:{
+        type:int,
+        require:true,
+    },
+    weight:{
+        type:String,
+        require:true,
+        },
+    subscription:{
+        type:String,
+        require:true,
+        },
+    }
+);
+
+const TrackSchema = mongoose.Schema({
+    id:{
+        type:int,
+        require:true,
+        unique:true,
+    },
+    name:{
+        type:String,
+        require:true,
+        },
+    author:{
+        type:String,
+        require:true,
+    },
+    album:{
+        type:String,
+        require:true,
+    },
+    genre:{
+        type:String,
+        require:true,
+    },
+    popularity:{
+        type:int,
+        require:true,
+    },
+    date:{
+        type:date,
+        require:true,
+    },
+    }
+);
+
+const RecomendTrackSchema = mongoose.Schema({
+    id:{
+        type:int,
+        require:true,
+        unique:true,
+    },
+    recomend:{
+        type:String,
+        require:true,
+        },
+    date:{
+        type:date,
+        require:true,
+    },
+    }
+);
+
+const ActivitySchema = mongoose.Schema({
+    id:{
+        type:int,
+        require:true,
+        unique:true,
+    },
+    goal:{
+        type:int,
+        require:true,
+        },
+    recomend:{
+        type:String,
+        require:true,
+        },
+    description:{
+        type:String,
+        require:true,
+        },
+    date:{
+        type:date,
+        require:true,
+    },
+    }
+);
+
+const RecipeSchema = mongoose.Schema({
+    id:{
+        type:int,
+        require:true,
+        unique:true,
+    },
+    name:{
+        type:String,
+        require:true,
+        },
+    description:{
+        type:String,
+        require:true,
+        },
+    photo:{
+        type:String,
+        require:true,
+        },
+    ingredients:{
+        type:String,
+        require:true,
+        },
+    instruction:{
+        type:String,
+        require:true,
+        },
+    }
+);
+
+const RecomendActionSchema = mongoose.Schema({
+    id:{
+        type:int,
+        require:true,
+        unique:true,
+    },
+    recomend:{
+        type:String,
+        require:true,
+        },
+    date:{
+        type:date,
+        require:true,
+        },
+    }
+);
+
+const TrackerSchema = mongoose.Schema({
+    id:{
+        type:int,
+        require:true,
+        unique:true,
+    },
+    name:{
+        type:String,
+        require:true,
+        },
+    }
+);
