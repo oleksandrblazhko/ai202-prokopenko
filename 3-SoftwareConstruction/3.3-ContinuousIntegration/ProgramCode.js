@@ -10,7 +10,7 @@ import {
 
 /* Процедура виводу на екран значень атрибутів */
 /* Перегляд даних користувача */
-export const getUserDetails = (id) => async(dispatch, getState) =>{
+export const getUserDetails = (id == 1) => async(dispatch, getState) =>{
     try {
         dispatch({type: USER_DETAILS_REQUEST});
     const {
