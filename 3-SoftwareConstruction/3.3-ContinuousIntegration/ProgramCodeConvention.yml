@@ -1,1 +1,16 @@
-
+name: ProgramCode
+on:
+  push:
+    branches: Lab11
+jobs:
+  ProgramCodeLinter:
+     runs-on: ubuntu-latest
+     steps:
+      - name: ProgramCode
+        uses: actions/checkout@v3
+      - name: ProgramCode
+        uses: github/super-linter@v4
+        env:
+          VALIDATE_JS: true
+          FILTER_REGEX_INCLUDE: ./*.js
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
