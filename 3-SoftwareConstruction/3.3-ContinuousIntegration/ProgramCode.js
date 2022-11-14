@@ -1,15 +1,31 @@
 /* Приклад встановлення з'єднання з БД  */
-import { 
-    USER_LOGIN_REQUEST,
-    USER_LOGIN_SUCCESS,
-    USER_LOGIN_FAIL,
-    USER_REGISTER_REQUEST,
-    USER_REGISTER_SUCCESS,
-    USER_REGISTER_FAIL,
- } 
+const userSchema = mongoose.Schema(
+  {
+    "id": "1",
+    "login": "Prokop",
+    "e-mail": "Prokop@gmail.com",
+    "photo": {},
+    "age": "19",
+    "growth": "190",
+    "weight": "75",
+    "subscription": "1 year",
+  }
+  {
+    "id": "2",
+    "login": "Ktoto2",
+    "e-mail": "Ktoto2@gmail.com",
+    "photo": {},
+    "age": "129",
+    "growth": "900",
+    "weight": "175",
+    "subscription": "2 year",
+);
+  }
+);
+    
 
 /* Процедура виводу на екран значень атрибутів */
-/* Перегляд даних користувача */
+/* Перегляд даних користувача з порядковим номером 1 (id=1) */
 export const getUserDetails = (id == 1) => async(dispatch, getState) =>{
     try {
         dispatch({type: USER_DETAILS_REQUEST});
