@@ -19,7 +19,6 @@ const userSchema = mongoose.Schema(
     "growth": "900",
     "weight": "175",
     "subscription": "2 year",
-);
   }
 );
     
