@@ -1,0 +1,16 @@
+name: TestCases
+on:
+ push:
+  branches: Lab11
+jobs:
+ TestCases:
+  runs-on: ubuntu-latest
+  steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Execute
+        uses: github/super-linter@v4
+        env:
+          VALIDATE_JAVASCRIPT_STANDART: true
+          FILTER_REGEX_INCLUDE: ./*.js$
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
