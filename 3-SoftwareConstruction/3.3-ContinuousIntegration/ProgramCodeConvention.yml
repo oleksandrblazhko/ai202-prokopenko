@@ -5,9 +5,9 @@ jobs:
   ProgramCode:
      runs-on: ubuntu-latest
      steps:
-      - name: Checkout Code in Repository
+      - name: Checkout
         uses: actions/checkout@v3
-      - name: Lint Program Code
+      - name: ProgramCode
         uses: github/super-linter@v4
         env:
           VALIDATE_JAVASCRIPT_STANDART: true
