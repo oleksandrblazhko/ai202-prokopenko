@@ -1,6 +1,6 @@
 #Етапи створення образу та контейнеру для запуску нашого скрипту
-Запускаємо командний рядок або PowerShell на машині із встановленим Docker.
-Переходимо до каталогу, що містить два файли index.js, код якого знаходиться у файлі ProgramClientCode.js (localhost в коді потрібно замінити на host.docker.internal), та package.json із таким змістом:
+- Запускаємо командний рядок або PowerShell на машині із встановленим Docker.
+- Переходимо до каталогу, що містить два файли index.js, код якого знаходиться у файлі ProgramClientCode.js (localhost в коді потрібно замінити на host.docker.internal), та package.json із таким змістом:
 {
   "dependencies": {
     "mongodb": "^4.11.0"
@@ -9,7 +9,7 @@
     "start": "node index.js"
   }
 }
-Далі створюємо файл Dockerfile із таким змістом:
+- Далі створюємо файл Dockerfile із таким змістом:
 створює образ на основі образу node:16
 FROM node:16
 
@@ -26,5 +26,5 @@ COPY . .
 EXPOSE 8080
 вказує, що при запуску контейнеру буде виконуватися команда npm start
 CMD [ "npm", "start" ]
-Створюємо образ командою docker build -t lukashak-node ..
-Командою docker run -it --rm --name nodetest prokop-node створюємо та запускаємо контейнер, після чого отримує результат виконання коду.
+- Створюємо образ командою docker build -t lukashak-node ..
+- Командою docker run -it --rm --name nodetest prokop-node створюємо та запускаємо контейнер, після чого отримує результат виконання коду.
