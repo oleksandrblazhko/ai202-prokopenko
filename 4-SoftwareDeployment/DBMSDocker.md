@@ -44,7 +44,8 @@ db.messages.insertMany([
     text: "Hello!",
     date: 3211516222824,
   },
-]);```
+]);
+```
 - Після цього команду "docker pull mongo" для того щоб отримати образ із потрібними нам файлами та конфігурацією.
 <- Створюємо та запускаємо новий контейнер, для цього використаємо команду "docker run --name prokop-mongo -p 28003:28003 -w /scripts -v ${PWD}:/scripts -d mongo".
 - Запускаємо mongosh для роботи з MongoDB: docker exec -it prokop-mongo mongosh project та завантажуємо у нього скрипт load("scripts/init.js").
