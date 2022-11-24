@@ -2,8 +2,8 @@
 - Запускаємо командний рядок на машині із встановленим Docker.
 - Створюємо каталог: D:/mongoDB через mkdir.
 - В каталозі, створюємо підкаталог scripts, що буде містити файл init.js з прописаним кодом:
+
 <br>db = connect("mongodb://localhost/project");
-<br>
 <br>db.createUser({
 <br> user: "admin",
 <br>  pwd: "admin",
